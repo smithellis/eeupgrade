@@ -4,9 +4,9 @@
 
 To do: 
 
-+ Needs error checking
-+ Needs exit on failures
-+ Needs better instructions
++ ~~Needs error checking~~ -> Good enough
++ ~~Needs exit on failures~~ -> Good enough
++ ~~Needs better instructions~~ -> Good enough
 + Needs to not be so flippant
 
 
