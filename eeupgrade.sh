@@ -10,8 +10,6 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Set the root directory - where the system folder lives
-# INSTALL_DIR=/var/www/upgradetest
-# NEW_EE_DIR=/var/eecode
 echo "Where is your installation of EE?  Give me the full file path to the directory that contains the system folder then press ENTER: "
 read INSTALL_DIR
 
