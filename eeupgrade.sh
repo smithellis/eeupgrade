@@ -38,16 +38,16 @@ mv $INSTALL_DIR/themes $INSTALL_DIR/themes.script || { echo "[ERROR]: themes fol
 echo "Moved themes folder to themes.script"
 
 echo "Moving all the new stuff over from $NEW_EE_DIR"
-mv $NEW_EE_DIR/admin.php $INSTALL_DIR/admin.php || { echo "[ERROR]: moving new admin.php over failed"; exit 1; }
+cp $NEW_EE_DIR/admin.php $INSTALL_DIR/admin.php || { echo "[ERROR]: moving new admin.php over failed"; exit 1; }
 echo "Installed new admin.php"
 
-mv $NEW_EE_DIR/index.php $INSTALL_DIR/index.php || { echo "[ERROR]: moving new index.php over failed"; exit 1; }
+cp $NEW_EE_DIR/index.php $INSTALL_DIR/index.php || { echo "[ERROR]: moving new index.php over failed"; exit 1; }
 echo "Installed new index.php"
 
-mv $NEW_EE_DIR/system $INSTALL_DIR/system || { echo "[ERROR]: moving new system folder over failed"; exit 1; }
+cp -r $NEW_EE_DIR/system $INSTALL_DIR/system || { echo "[ERROR]: moving new system folder over failed"; exit 1; }
 echo "Installed new system directory."
 
-mv $NEW_EE_DIR/themes $INSTALL_DIR/themes || { echo "[ERROR]: moving new themes folder failed"; exit 1; }
+cp -r $NEW_EE_DIR/themes $INSTALL_DIR/themes || { echo "[ERROR]: moving new themes folder failed"; exit 1; }
 echo "Installed new themes directory."
 
 
