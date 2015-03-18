@@ -14,4 +14,13 @@ To do:
 
 ## Warning:  This is the most basic of all shell scripts.  I mean, it's like...rudimentary.  So, you know.  Don't judge.  I just hate typing chmod a thousand times, and I hate copying things a thousand times, so this does that stuff.
 
-## Yes, I know there is a $25.00 plugin to do this.  Everything with ExpressionEngine is a $25.00-$200.00 plug in.  I ain't made of money.
+## Yes, I know there is a $25.00 plugin to do this.  Everything with ExpressionEngine is a $25.00-$200.00 plug-in.  I ain't made of money.
+
+#USAGE
+
+Upload your new, unzipped version of ExpressionEngine onto the server where your site lives.  Start the script as root:
+
+    sudo ./eeupgrade.sh
+
+Answer the questions.  Watch the magic.  Much good.  Much happy.
+

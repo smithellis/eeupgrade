@@ -2,6 +2,11 @@
 # Automate some of the chores that go with an EE upgrade
 # I'll probably use this once and then throw it away.
 # Thanks, Obama.
+# This was hacked together by Smith Ellis
+# http://smithellis.com
+# You can follow me on github 
+# https://github.com/smithellis
+# Feel free to contribute
 
 # Got root?
 if [[ $EUID -ne 0 ]]; then
@@ -76,5 +81,4 @@ chmod 777 $INSTALL_DIR/images/signature_attachments
 chmod 777 $INSTALL_DIR/images/uploads
 
 echo "I've done what I can do, homie. Now you have to log in to the control panel and run the updater.  After that you have to delete the installer directory.  That's much easier than all this chmod and copy paste crap I just did for you.  I hope your life is better now."
-
 
