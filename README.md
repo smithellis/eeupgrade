@@ -19,7 +19,8 @@ To do:
 #USAGE
 
 Upload your new, unzipped version of ExpressionEngine onto the server where your site lives - but don't put it inside your current EE installation folders...  
-Put this script (eeupgrade.sh) somewhere you can access it outside the EE directoriesi, but on that same server.
+
+Put this script (eeupgrade.sh) somewhere you can access it outside the EE directories, but on that same server.
 
 Start the script as root:
 
