@@ -81,5 +81,8 @@ chmod 777 $INSTALL_DIR/images/pm_attachments || { echo "[ERROR]: chmod failed"; 
 chmod 777 $INSTALL_DIR/images/signature_attachments || { echo "[ERROR]: chmod failed"; exit 1; }
 chmod 777 $INSTALL_DIR/images/uploads || { echo "[ERROR]: chmod failed"; exit 1; }
 
-echo "I've done what I can do, homie. Now you have to log in to the control panel and run the updater.  After that you have to delete the installer directory.  That's much easier than all this chmod and copy paste crap I just did for you.  I hope your life is better now."
+echo "Ok, now you need to log into your control panel and run the updater.  That part is on you.  I'm going to sit here while you do that.  When you are done, hit any key and I'll move the installer directory for you."
+read MV_INSTALLER
 
+mv $INSTALL_DIR/system/installer $INSTALL_DIR/system/installer.script || { echo "[ERROR]: moving the installer directory failed"; exit 1; }
+echo "We are all done.  You may want to totally wipe out the installer directory if you are satisfied things are ok.  Thanks for using this script.  You can send me money or bitcoins or ssomething for this service."
